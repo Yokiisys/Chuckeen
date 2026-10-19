@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Greenbrook Poultry</title>
+  <meta name="description" content="Farm-raised chickens sorted by age: 4 months, 5 months, and 6 months and older.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Nunito+Sans:wght@400;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#home" aria-label="Home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><ellipse cx="20" cy="22" rx="13" ry="16" fill="#D3F7AD" stroke="#97935C" stroke-width="3"/><ellipse cx="15" cy="16" rx="4" ry="6" fill="#8BE3E1" transform="rotate(-20 15 16)"/></svg>
+        <span id="brand-name">Greenbrook Poultry Farm</span>
+      </a>
+      <button class="btn btn-ghost btn-sm menu-btn" id="menu-btn" type="button" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#home">Home</a>
+        <a href="#shop">All chickens</a>
+        <a href="#shop-4">4 months</a>
+        <a href="#shop-5">5 months</a>
+        <a href="#shop-6">6 months +</a>
+        <a href="#admin">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>&copy; <span id="year"></span> Greenbrook Poultry Farm. Reservations are made directly with the farm.</span>
+      <a href="#admin">Admin sign in</a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" hidden></div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
